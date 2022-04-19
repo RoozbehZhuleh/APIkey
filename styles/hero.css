@@ -12,9 +12,10 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    gap: 5rem;
 }
 
-.left__items__wrapper{
+.top__items__wrapper{
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -22,12 +23,12 @@
     
 }
 
-.left__items{
+.top__items{
     width: 40%;
 }
 
-.right__items{
-    width: 60%;
+.bottom__items{
+    width: 90%;
 }
 
 
@@ -39,7 +40,8 @@ h3{
 input{
     padding: 0.5rem;
     border-radius: 1rem;
-    width: 70%;
+    width: 99%;
+    text-align: center;
 }
 
 .row--1,
@@ -49,6 +51,7 @@ input{
 }
 
 table{
+    table-layout: fixed;
     background: linear-gradient(
     90deg,
     var(--primary-color) 0%,
@@ -57,14 +60,17 @@ table{
   );
     border-radius: 1rem;
     padding: 1rem;
+    width: 100%;
 }
 
-th{
+.numbers{
     width: 20%;
 }
 
+
 td{
     border-block-end: 1px solid black;
+    text-align: center;
 }
 
 .button__wrapper{
@@ -73,4 +79,24 @@ td{
     align-items: center;
     gap: 1rem;
     margin: 0 0 0 1rem;
+}
+
+thead th:nth-child(1){
+    width: 5%;
+}
+
+thead th:nth-child(2){
+    width: 10%;
+}
+
+thead th:nth-child(3){
+    width: 30%;
+}
+
+thead th:nth-child(4){
+    width: 30%;
+}
+
+.submit__btn{
+    margin: 1rem 0;
 }
