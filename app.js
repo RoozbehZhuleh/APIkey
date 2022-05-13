@@ -2,6 +2,7 @@ const username = document.querySelector("#username");
 const apiKey = document.querySelector("#api--key");
 const apiSecret = document.querySelector("#api--secret");
 const table = document.querySelector("table");
+const buttons = document.querySelector("btn__secondary");
 
 document.querySelector("#submit__btn").addEventListener("click", runSubmit);
 
@@ -13,11 +14,11 @@ function runSubmit(){
     let cell3 = row.insertCell(2);
     let cell4 = row.insertCell(3);
     let cell5 = row.insertCell(4);
-    cell1.innerHTML = "CELL 1";
-    cell2.innerHTML = "CELL 2";
-    cell3.innerHTML = "CELL 3";
-    cell4.innerHTML = "CELL 4";
-    cell5.innerHTML = "CELL 5";
+    cell1.innerHTML = "1";
+    cell2.innerHTML = username.value;
+    cell3.innerHTML = apiKey.value;
+    cell4.innerHTML = apiSecret.value;
+    cell5.innerHTML = buttons.innerHTML;
 
 }
 
@@ -25,4 +26,4 @@ function runSubmit(){
 
 
 
-// swal("hello");
+swal("Welcome to API Key manager");
